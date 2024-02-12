@@ -1,10 +1,10 @@
 import React from "react";
-
+import Card from "./Card";
 import styles from "./ProductInfoCard.module.css";
 
 function ProductInfoCard({ product }) {
   return (
-    <div className={styles.card}>
+    <Card elevation={3}>
       <div className={styles.wrapper}>
         <img
           className={styles.productPhoto}
@@ -15,7 +15,7 @@ function ProductInfoCard({ product }) {
         <p className={styles.price}>${product.price}</p>
         <button>Add to cart</button>
       </div>
-    </div>
+    </Card>
   );
 }
 
